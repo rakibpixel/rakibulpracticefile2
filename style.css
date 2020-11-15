@@ -1,0 +1,355 @@
+  /* ===============================
+            COMMON CSS
+  ==================================== */
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+    /* ===============================
+                 MENU DESIGN
+  ==================================== */
+  #main_menu {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #3497db;
+  }
+  
+  #main_menu ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  #main_menu ul li {
+    display: inline-block;
+    border-right: 1px solid #ddd;
+    margin-left: -4px;
+    position: relative;
+  }
+  
+  #main_menu ul li a {
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  #main_menu ul li:first-child {
+    border-left: 1px solid #ddd;
+  }
+  
+  #main_menu ul > li:hover {
+    background: #0488e0;
+    color: blanchedalmond;
+  }
+  
+  #main_menu ul li ul {
+    background: #3497db;
+    position: absolute;
+    top: 100%;
+    left: -2px;
+    width: 180px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: 999;
+  }
+  
+  #main_menu ul li ul li {
+    border-top: 1px solid #ddd;
+    display: block;
+    margin-left: 0px;
+  }
+  
+  #main_menu ul li ul li:first-child {
+    border-left: none;
+  }
+  
+  #main_menu ul li ul li a {
+  }
+  
+  #main_menu ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+  }
+  
+
+
+    /* ===============================
+        SOCIAL ICON DESIGN
+  ==================================== */
+  .social_icon {
+    text-align: center;
+    background: #454c54;
+    padding: 15px 0px;
+  }
+  
+  .social_icon ul {
+  }
+  
+  .social_icon ul li {
+    display: inline-block;
+    margin: 0px 10px;
+  }
+  
+  .social_icon ul li a {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    display: block;
+    background: #223042;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #007bff;
+    color: #cabcbc;
+    text-shadow: 1px 2px 4px #4628a5;
+    transition: 0.4s ease;
+  }
+  
+  .social_icon ul li a:hover {
+    border-radius: 20%;
+    text-shadow: 1px 2px 4px #292525;
+  }
+  
+  .social_icon ul li a:hover.A {
+    background: #1877f2;
+    color: white;
+  }
+  
+  .social_icon ul li a:hover.B {
+    background: #c32aa3;
+    color: white;
+  }
+  
+  .social_icon ul li a:hover.C {
+    background: #1da1f2;
+    color: white;
+  }
+  
+  .social_icon ul li a:hover.D {
+    background: #ff0000;
+    color: white;
+  }
+  
+  .social_icon ul li a:hover.E {
+    background: #007bb5;
+    color: white;
+  }
+  
+
+
+    /* ===============================
+        BEFORE AFTER ANIMATION
+  ==================================== */
+  h1.design {
+    position: absolute;
+    bottom: 72px;
+    left: 305px;
+    color: white;
+    text-shadow: 0px 5px 17px white;
+}
+  
+  
+  
+  .form_div {
+    text-align: center;
+    height: auto;
+    width: auto;
+    background: #2c3138;
+    padding: 20px 0px;
+    position: relative;
+  }
+  
+  
+  .form_div .A_class {
+      display: inline-block;
+      background: white;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 25px;
+      font-weight: bold;
+      color: blue;
+      font-family: arial black;
+      border-radius: 10px;
+      box-shadow: 0px 3px 3px 2px gold;
+      position: relative;
+      z-index: 1;
+      transition: .4s ease;
+      overflow: hidden;
+  }
+  .form_div .A_class:hover {
+      color: white;
+  }
+  
+  .form_div .A_class::after {
+      content: "";
+      width: 0;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background: rgb(255, 0, 0);
+      border-radius: 10px;
+      transition: .4s ease;
+  }
+  
+  
+  .form_div .A_class:hover::after {
+      width: 100%; 
+  }
+  
+
+
+  /* ===============================
+        THIS IS A FORM DESIGN
+  ==================================== */
+
+  form {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 960px;
+  }
+  
+
+
+    /* ===============================
+        TRANSFORM PRACTICH
+  ==================================== */
+  
+  .basicDesign{
+      background: coral;
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+      color: white;
+      display: inline-block;
+  }
+  
+  
+  .transformdiv{
+      text-align: center;
+      width: 1280px;
+      margin: 0 auto;
+      border: 1px solid red;
+      margin-bottom: 200px;
+  }
+  
+  .transformdiv .box1{
+      transition: .6s ease;
+  }
+  
+  .transformdiv .box1:hover{
+      transform: translate(-44px, -79px);    
+  }
+  
+  .transformdiv .box2{
+      transform: rotate(0deg);
+      transition: .6s ease;
+  }
+  
+  .transformdiv .box2:hover{
+      transform: rotate(43deg);
+  }
+  
+  .transformdiv .box3{
+      transform: skew(0);
+      transition: .6s ease;
+  }
+  
+  .transformdiv .box3:hover{
+      transform: skew(50deg, -5deg);
+  }
+  
+  
+  .transformdiv .box4{
+      transform: scale(1);
+      transition: .6s ease;
+  }
+  
+  
+  .transformdiv .box4:hover{
+      transform: scale(1.8);
+  }
+  
+  
+  
+  
+    /* ===============================
+            FLOAT AND CLEAR
+  ==================================== */
+  
+  
+  .my_room{
+      width: 960px;
+      margin: auto;
+      border: 1px solid red;
+      text-align: center;
+  }
+  
+  .my_room::after{
+      content: "";
+      display: block;
+      clear: both;
+  }
+  
+  
+  .my_room .chare{
+      width: 250px;
+      height: 200px;
+      background: chocolate;
+      float: left;
+
+      font-size: 50px;
+      text-transform: uppercase;
+      color: white;
+  }
+  
+  .my_room .table{
+      width: 250px;
+      height: 200px;
+      background: rgb(236, 10, 116);
+      margin: 0;
+      float: right;
+      font-size: 50px;
+      text-transform: uppercase;
+      color: white;
+  }
+  
+  .my_room .sofa{
+      width: 250px;
+      height: 200px;
+      background: rgb(207, 7, 233);
+      float: left;
+      font-size: 50px;
+      text-transform: uppercase;
+      color: white;
+  }
+  
+  .fajil_div{
+      width: 250px;
+      height: 500px;
+      background: rgb(255, 8, 8);
+      margin: auto;
+      font-size: 50px;
+      text-transform: uppercase;
+      color: white;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
